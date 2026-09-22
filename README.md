@@ -53,7 +53,7 @@ See `platform-export/README.md` for complete details on Option B.
 
 ## Related Article
 
-This repository accompanies a narrative article published on Medium: **"[A Walkthrough of IBM QualityStage: From a Messy CRM to a Validated Cross-System Match](https://www.linkedin.com/in/jcgarciahdz/)"**.
+This repository accompanies a narrative article published on Medium: **"[A Walkthrough of IBM QualityStage: From a Messy CRM to a Validated Cross-System Match](https://medium.com/@juliocgarciahdz/a-walkthrough-of-ibm-qualitystage-from-a-messy-crm-to-a-validated-cross-system-match-38f498cf13d0?sharedUserId=juliocgarciahdz)"**.
 
 ## Technical Highlights
 

@@ -9,7 +9,7 @@
 > (`JOB_09_TwoSourceMatch`) answers the original business question: 6
 > customers exist in both systems, 2 are ERP-exclusive, 4 are
 > CRM-exclusive. **30 real problems** were solved along the way,
-> documented in [`docs/08-troubleshooting.md`](08-troubleshooting.md).
+> documented in [`docs/07-troubleshooting.md`](07-troubleshooting.md).
 >
 
 **Business case:** the Marketing team has a CSV exported from the CRM
@@ -255,13 +255,9 @@ Compare your outputs against `data/expected_output_notes.md` (included in
 this repo) to confirm the duplicate groups and the ERP cross-checks match
 what's expected.
 
-## Step 8 — Document and publish
+## Step 8 — watsonx Data Integration
 
 - The real project export (the 9 jobs, ready to import) is already
   included in `/platform-export` — see `platform-export/README.md` for
   the detail on what's in it and how to import it into your own
   instance.
-- Take screenshots of each configured stage if you want to complement the
-  narrative article (`docs/medium-article.md`) with your own images.
-- Push everything to GitHub (see `docs/07-publishing-on-github.md`).
-- Publish the narrative article on Medium and link it back to the repo.

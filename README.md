@@ -2,7 +2,7 @@
 
 A comprehensive, production-validated demonstration showcasing **all major QualityStage stages** within IBM DataStage (Cloud Pak for Data / watsonx.data integration), using a realistic business scenario: **cleansing, standardizing, and deduplicating a customer master**, followed by a **cross-system match against an ERP system** to identify overlaps.
 
-> **Project Status: COMPLETE AND VALIDATED.** All 6 stages have been validated end-to-end on a real instance, culminating in the final Two-Source Match: **6 customers exist in both systems, 2 are ERP-exclusive, 4 are CRM-exclusive**. **30 real-world issues** were resolved during implementation — all documented in `docs/08-troubleshooting.md`.
+> **Project Status: COMPLETE AND VALIDATED.** All 6 stages have been validated end-to-end on a real instance, culminating in the final Two-Source Match: **6 customers exist in both systems, 2 are ERP-exclusive, 4 are CRM-exclusive**. **30 real-world issues** were resolved during implementation — all documented in `docs/07-troubleshooting.md`.
 
 ## Pipeline Overview
 
@@ -14,7 +14,7 @@ A comprehensive, production-validated demonstration showcasing **all major Quali
 |-----------|----------|
 | `/data` | Source CSV files (dirty CRM + ERP master reference) used throughout the demo |
 | `/specs` | Stage specifications: Standardize rules (real `MXADDR`/`MXNAME`/`MXAREA` rule sets), Match Specification definitions, weights, frequency information |
-| `/docs` | Detailed step-by-step guide, including real troubleshooting log (`08-troubleshooting.md`) |
+| `/docs` | Detailed step-by-step guide, including real troubleshooting log (`07-troubleshooting.md`) |
 | `/outputs` | Real reports and outputs generated from running jobs on a production instance (`investigate_reports/`: Step 1; `standardize_reports/`: Step 2; `onesource_match_reports/`: Steps 3-4; `survive_reports/`: Step 5; `master_clean_reports/`: final cleaned master of 10 records; `erp_standardize_reports/`: standardized ERP, 8 records; `match_frequency_twosource_reports/`: independent CRM and ERP frequencies, Step 6 preparation; `twosource_match_reports/`: final Step 6 results — matched, clerical, nonmatched by source, statistics) |
 | `/images` | `pipeline-overview.svg` — summary diagram of the 9 jobs (CRM track, ERP track, final result) |
 | `/platform-export` | Real project export from Cloud Pak for Data — all 9 jobs, ready to import into your own instance. See `platform-export/README.md` |
@@ -53,9 +53,7 @@ See `platform-export/README.md` for complete details on Option B.
 
 ## Related Article
 
-This repository accompanies a narrative article published on Medium: **"A Walkthrough of IBM QualityStage: From a Messy CRM to a Validated Cross-System Match"** — the source version is available in `docs/medium-article.md`.
-
-> Note: Once published on Medium, this section will be updated with the actual link, and a reciprocal link to this repository will be added to the article for mutual SEO and credibility benefits.
+This repository accompanies a narrative article published on Medium: **"[A Walkthrough of IBM QualityStage: From a Messy CRM to a Validated Cross-System Match](https://www.linkedin.com/in/jcgarciahdz/)"**.
 
 ## Technical Highlights
 
@@ -68,7 +66,7 @@ This repository accompanies a narrative article published on Medium: **"A Walkth
 
 **Julio César García Hernández**
 
-Data Integration Specialist | IBM DataStage & QualityStage Expert
+Client Value Engineer (Data & Business Automation) | AI | Data Integration | Business Automation | IBM Technology
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/jcgarciahdz/)
 
@@ -81,7 +79,7 @@ MIT License — feel free to reuse and adapt with proper attribution.
 ## Quick Links
 
 - [Step-by-Step Guide](docs/00-step-by-step-guide.md)
-- [Troubleshooting Log](docs/08-troubleshooting.md)
+- [Troubleshooting Log](docs/07-troubleshooting.md)
 - [Expected Results](data/expected_output_notes.md)
 - [Platform Export Guide](platform-export/README.md)
 
